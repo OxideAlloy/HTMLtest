@@ -17,8 +17,8 @@ body {
   margin: 0 auto;
 }
 
-/* background-color and color should be the same as the below otherwise it won't work */
 .container > .text {
+  text-shadow: 2px 2px 20px white;
   position: absolute;
   inset: 0;
   display: grid;
@@ -28,9 +28,20 @@ body {
   font-weight: 900;
   font-size: 100px;
   font-family: sans-serif;
-  /* Mix Blend Mode does the all magic */
   mix-blend-mode: multiply;
   user-select: none;
+}
+
+.subtext {
+  position: relative;
+  color: #fff;
+  font-weight: 900;
+  font-size: 32px;
+  font-family: sans-serif;
+  margin-top: -120px;
+  margin-bottom: 30px;
+  text-align: center
+  ;
 }
 
 .btn-toolbar {
@@ -38,16 +49,6 @@ body {
   display: flex;
   justify-content: center;
 }
-
-/* .btn-group {
-  margin:0 auto;
-  display:block;
-} */
-
-/* .btn-toolbar > .btn, .btn-toolbar > .btn-group, .btn-toolbar > .input-group {
- margin-left:5px;
- margin-left:5px;
-} */
 
 a.button1{
   display:inline-block;
@@ -74,7 +75,7 @@ a.button1:hover{
   }
 } */
 
-/* .bouncy{
+.bouncy{
   animation:bouncy 5s infinite linear;
   position:relative;
 }
@@ -86,5 +87,12 @@ a.button1:hover{
   48%{top:-0.4em}
   50%{top:0em}
   100%{top:0em;}
-} */
+}
 
+
+.stockText{
+  color:#fff;
+  text-indent:50px;
+  font-family: Verdana , sans-serif;
+  margin: 10px 50px 10px 50px;
+}
